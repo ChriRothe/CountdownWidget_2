@@ -47,6 +47,7 @@ function createWidget(days) {
   line2.textColor = Color.black()
   
   title.centerAlignText()
+  widget.addSpacer(15)
   line1.centerAlignText()
   line2.centerAlignText()
   

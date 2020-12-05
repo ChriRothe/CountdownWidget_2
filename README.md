@@ -1,6 +1,9 @@
-# CyberpunkCountdown
-Code for a Scriptable widget that counts down to Cyberpunk's PC release
+# Countdown Widget based on CyberpunkCountdown-Widget by thejakenixon
+Code for a Scriptable widget that counts down to a Target Date and Time
 
-Paste the code into the .js file into an empty widget in Scriptable. Make sure to edit your release time--it is currently set for 5PM which is the release time for Mountain Time.
+Paste the code into the .js file into an empty widget in Scriptable. 
 
-![Example](https://i.imgur.com/awaTCim.png)
+Next Steps:
+- Different Look& Feel
+- Taget, Date & Time Input by Scriptable-Parameter
+- ? any ideas ?

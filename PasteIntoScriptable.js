@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 9, 2020 17:00:00").getTime();
+var countDownDate = new Date("Oct 1, 2021 00:00:00").getTime();
 var now = new Date().getTime();
 var distance = countDownDate - now;
 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -15,17 +15,17 @@ if (config.runsInWidget) {
 function createWidget(days) {
   let widget = new ListWidget()
 
-  let title = widget.addText("Time Until Cyberpunk 2077")
+  let title = widget.addText("⏳ Countdown to xxx")
   title.font = Font.semiboldSystemFont(20);
   title.textColor = Color.black()
   title.centerAlignText()
   
-  let line1 = widget.addText(days.toString(10).concat(' days ').concat((hours%24).toString(10)).concat(' hours'))
-  line1.font = Font.semiboldSystemFont(30);
+  let line1 = widget.addText(days.toString(10).concat(' Tage '))
+  line1.font = Font.semiboldSystemFont(50);
   line1.textColor = Color.black()
   
 
-  let line2 = widget.addText((mins%60).toString(10).concat(' minutes ').concat((secs%60).toString(10)).concat(' seconds'))
+  let line2 = widget.addText(hours.toString(10).concat(' Stunden ')(mins%60).toString(10).concat(' Minuten ').concat((secs%60).toString(10)).concat(' Sekunden'))
   line2.font = Font.semiboldSystemFont(20);
   line2.textColor = Color.black()
   

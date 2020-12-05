@@ -1,10 +1,27 @@
-var countDownDate = new Date("Oct 1, 2021 00:00:00").getTime();
+// var countDownDate = new Date("Oct 1, 2021 00:00:00").getTime();
 var now = new Date().getTime();
 var distance = countDownDate - now;
 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 var hours = Math.floor(distance / (1000 * 60 * 60));
 var mins = Math.floor(distance / (1000 * 60));
 var secs = Math.floor(distance / (1000));
+
+let widgetInputRAW = args.widgetParameter;
+// let widgetInput = null;
+var countDownDate = new Date(widgetInputRAW).getTime();
+
+//if (widgetInputRAW !== null) {
+  //widgetInput = widgetInputRAW.toString().split(";");
+  //if (/^\d{4}-\d{2}-\d{2}$/.test(widgetInput[0].trim()) === false) {
+  //   throw new Error('Invalid Date format. Please format: Oct 1, 2021 00:00:00') 
+  //}
+  // countDownDate = widgetInput[0].trim()
+  //if (widgetInput[2] && widgetInput[2].toLowerCase() === 'true') {
+  //  showDate = true
+  //}
+//} else {
+//  throw new Error('No Date set! Please format: Oct 1, 2021 00:00:00')
+//}
 
 if (config.runsInWidget) {
   let widget = createWidget(days)

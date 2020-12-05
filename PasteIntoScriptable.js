@@ -34,13 +34,13 @@ function createWidget(days) {
   line2.centerAlignText()
   
   //make a gradient
-  let startColor = new Color("#fcec0c")
-  let endColor = new Color("#978d01")
+  let startColor = new Color("#000000")
+  let endColor = new Color("#111111")
   let gradient = new LinearGradient()
   gradient.colors = [startColor, endColor]
   gradient.locations = [0.0, 1]
   widget.backgroundGradient = gradient
-  widget.backgroundColor = new Color("#ff5401")
+  widget.backgroundColor = new Color("#f111111")
 
   return widget
 }
